@@ -11,7 +11,7 @@ import { slide as Menu } from 'react-burger-menu'
 
 
 
-export const Navbar = () => {
+export const Navbar = ({cart}) => {
     
     
   return (
@@ -56,7 +56,7 @@ export const Navbar = () => {
         <Link to='/' className='link'>Home</Link>
         <Link to='/aboutus' className='link'>About</Link>
         <Link to='/spices' className='link'>Spices</Link>
-        <Link to='/cart' className='link'>Cart</Link>
+        <Link to='/cart' className='link'>Cart {cart.length}</Link>
         
 
         </div>

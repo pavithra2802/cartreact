@@ -54,7 +54,15 @@ export const Spices = ({cart,setCart}) => {
         <Link to='/aboutus' className='link'>About</Link>
         <Link to='/spices' className='link'>Spices</Link>
         {/* <Link to='/fruits' className='link'>Fruits</Link> */}
-        <Link to='/cart' className='link'>Cart</Link>
+        <Link to='/cart' className='link'>
+        <div className="cartround">
+        Cart 
+        {cart.length}
+
+        </div>
+            
+        
+        </Link>
 
         </div>
         <Outlet></Outlet>
